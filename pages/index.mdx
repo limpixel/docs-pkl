@@ -1,0 +1,74 @@
+import {
+  ScreenContainer,
+  Button,
+  HeroSection,
+  Hero,
+  HeroBody,
+  HeroTitle,
+  HeroTeaser,
+  HeroActionList,
+  HeroAction,
+  FeatureSection,
+  FeatureList,
+  Feature,
+  FeatureImage,
+  FeatureTitle,
+  FeatureText,
+} from "smooth-doc/components";
+import heroBackgroundImageURL from "../images/hero-background.png";
+import FeatureImg from "../public/icons/icon-72x72.png";
+
+<HeroSection>
+  <Hero backgroundImageURL={heroBackgroundImageURL}>
+    <HeroBody>
+      <HeroTitle>Laporan PKL</HeroTitle>
+      <HeroTeaser>
+        Laporan PKL ini digunakan sebagai dokumentasi dan hasil dari PKL murid
+        yang bernama Abdul Halim
+      </HeroTeaser>
+      <HeroActionList>
+        <HeroAction>
+          <Button variant="primary" forwardedAs="a" href="/docs/">
+            Browse Docs
+          </Button>
+        </HeroAction>
+      </HeroActionList>
+    </HeroBody>
+  </Hero>
+</HeroSection>
+
+<FeatureSection>
+  <FeatureList>
+    <Feature>
+      <FeatureImage src={FeatureImg} />
+      <FeatureTitle>Use Gatsby</FeatureTitle>
+      <FeatureText>
+        Gatsby is a powerful static website generator. It gives you amazing web
+        perf.
+      </FeatureText>
+    </Feature>
+    <Feature>
+      <FeatureImage src={FeatureImg} />
+      <FeatureTitle>Powered by MDX</FeatureTitle>
+      <FeatureText>
+        MDX combines Markdown and JSX. You can use your own components in
+        Markdown-style files.
+      </FeatureText>
+    </Feature>
+    <Feature>
+      <FeatureImage src={FeatureImg} />
+      <FeatureTitle>Custom Theme & Dark Mode</FeatureTitle>
+      <FeatureText>
+        Dark mode is natively supported and theme is fully customizable!
+      </FeatureText>
+    </Feature>
+    <Feature>
+      <FeatureImage src={FeatureImg} />
+      <FeatureTitle>Ready-to-use components</FeatureTitle>
+      <FeatureText>
+        A set of ready-to-use components to build great landing pages.
+      </FeatureText>
+    </Feature>
+  </FeatureList>
+</FeatureSection>
+,
